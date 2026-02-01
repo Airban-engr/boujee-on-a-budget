@@ -1,234 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Boujee on a Budget — Portfolio</title>
-  <meta name="description" content="Boujee on a Budget — an elegant portfolio site." />
+  <meta name="description" content="Executive & Virtual Assistant portfolio — Administrative Support, Customer Support, Social Media Assistance, Project Management." />
 
-  <!-- Fonts (close to the look in your screenshots) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- Background frame -->
-  <div class="page-bg">
-    <div class="frame">
+  <div class="frame">
+    <div class="container">
 
-      <!-- 1) COVER / BRAND CARD -->
-      <section class="card cover" id="top">
-        <div class="cover-grid">
-          <div class="cover-photo" role="img" aria-label="Cover photo"></div>
+      <!-- Top mini nav (no internal broken links — just anchors on same page) -->
+      <header class="topbar">
+        <div classs="brand">
+          <div class="brand__title">Boujee</div>
+          <div class="brand__subtitle">on a budget</div>
+        </div>
 
-          <div class="cover-content">
-            <div class="brand">
-              <h1 class="brand-title">BOUJEE</h1>
-              <div class="brand-script">on a budget</div>
-              <div class="brand-rule"></div>
-            </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#certs">Certifications</a>
+          <a class="nav__cta" href="#contact">Contact</a>
+        </nav>
+      </header>
 
-            <div class="swatches" aria-label="Brand colors">
-              <div class="swatch" title="Taupe"></div>
-              <div class="swatch sw2" title="Warm Brown"></div>
-              <div class="swatch sw3" title="Deep Brown"></div>
-              <div class="swatch sw4" title="Olive"></div>
-            </div>
+      <!-- HERO -->
+      <section class="panel hero">
+        <div class="hero__media">
+          <img src="assets/hero.jpg" alt="Boujee on a Budget brand visual" />
+        </div>
 
-            <a class="btn btn-primary" href="#welcome">Enter Portfolio</a>
+        <div class="hero__card">
+          <h1 class="hero__headline">Welcome<br><span>to my portfolio!</span></h1>
+          <p class="hero__label">My name is:</p>
+          <p class="hero__name">Love Morton-Bruce</p>
+
+          <div class="swatches" aria-label="Brand colors">
+            <span class="swatch s1"></span>
+            <span class="swatch s2"></span>
+            <span class="swatch s3"></span>
+            <span class="swatch s4"></span>
+          </div>
+
+          <a class="button" href="#contact">Let’s work together</a>
+          <p class="note">Reliable, proactive executive & virtual support — built for busy founders and teams.</p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="panel two-col">
+        <div class="two-col__left">
+          <img class="photo" src="assets/profile.jpg" alt="Portrait of Love Morton-Bruce" />
+          <h2 class="h2">About Me</h2>
+          <div class="rule"></div>
+        </div>
+
+        <div class="two-col__right">
+          <p class="lead">
+            Hi, I’m Love — the reliable support behind the scenes, helping businesses stay organized, efficient, and stress-free.
+            I’m a certified C-suite–level Executive and Virtual Assistant with a strong passion for keeping operations running smoothly.
+          </p>
+          <p>
+            From administrative support and customer service to light social media assistance, I handle the details so you can focus on what truly matters.
+            I’m detail-oriented, proactive, and always looking for simple ways to make your workday easier.
+            Consider me your dependable right-hand support as you grow your business.
+          </p>
+
+          <div class="chips">
+            <span class="chip">Administrative Support</span>
+            <span class="chip">Customer Support</span>
+            <span class="chip">Social Media Assistance</span>
+            <span class="chip">Project Management</span>
           </div>
         </div>
       </section>
 
-      <!-- 2) WELCOME / HERO -->
-      <section class="card split" id="welcome">
-        <div class="split-left">
-          <h2 class="display">
-            <span class="display-big">Welcome</span>
-            <span class="display-sub">to my portfolio!</span>
-          </h2>
-
-          <div class="intro">
-            <div class="label">My name is:</div>
-            <div class="name">Boujee on a Budget</div>
-          </div>
-
-          <div class="cta-row">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn btn-ghost" href="#contact">Contact</a>
-          </div>
+      <!-- PLAN: Vision / Mission -->
+      <section class="panel plan">
+        <div class="plan__col">
+          <h2 class="h2">My Plan</h2>
+          <h3 class="h3">Vision</h3>
+          <p>
+            To become a trusted long-term support partner for growing businesses and executives,
+            known for consistency, efficiency, and making workdays smoother through dependable virtual assistance.
+          </p>
         </div>
 
-        <div class="split-right">
-          <img class="img-soft" src="images/portrait.jpg" alt="Portrait" />
+        <div class="plan__center">
+          <img class="photo" src="assets/about.jpg" alt="Workspace lifestyle image" />
         </div>
-      </section>
 
-      <!-- 3) ABOUT -->
-      <section class="card about" id="about">
-        <div class="about-grid">
-          <div class="about-photo">
-            <img class="img-soft" src="images/about.jpg" alt="Lifestyle photo" />
-            <div class="about-title">
-              <div class="display-big">About Me</div>
-              <div class="thin-rule"></div>
-            </div>
-          </div>
-
-          <div class="about-text">
-            <p class="lead">
-              Hi, I’m <strong>Boujee</strong> — the calm, reliable support behind the scenes,
-              helping busy people stay organized, efficient, and stress-free.
-            </p>
-            <p>
-              I bring a polished, detail-first approach to everything I touch — from admin and
-              customer support to light content assistance and scheduling. I’m proactive, discreet,
-              and obsessed with smooth workflows.
-            </p>
-            <p class="muted">
-              Consider me your dependable right-hand support — focused on making your days lighter
-              and your operations cleaner.
-            </p>
-          </div>
+        <div class="plan__col">
+          <h2 class="h2 h2--muted">Mission</h2>
+          <p>
+            To provide reliable, efficient, and proactive virtual support that helps business owners and executives stay organized,
+            reduce stress, and focus on what matters most — with professionalism, confidentiality, and attention to detail.
+          </p>
         </div>
       </section>
 
-      <!-- 4) PLAN: VISION + MISSION -->
-      <section class="card plan" id="plan">
-        <div class="plan-grid">
-          <div class="plan-col">
-            <h3 class="section-title">My Plan</h3>
-            <h4 class="subhead">Vision</h4>
-            <p>
-              To become a trusted long-term support partner for growing brands and professionals —
-              known for consistency, clarity, and making workdays feel effortless.
-            </p>
+      <!-- EXPERTISE -->
+      <section id="expertise" class="panel expertise">
+        <div class="expertise__title">
+          <div class="dots">
+            <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
           </div>
+          <h2 class="h2">My Expertise</h2>
+          <div class="rule"></div>
+        </div>
 
-          <div class="plan-mid">
-            <img class="img-soft" src="images/plan.jpg" alt="Desk photo" />
-          </div>
+        <div class="grid">
+          <figure class="card">
+            <img src="assets/expertise-1.jpg" alt="Administrative Support" />
+            <figcaption>Administrative Support</figcaption>
+          </figure>
 
-          <div class="plan-col">
-            <h4 class="subhead">Mission</h4>
-            <p>
-              To provide reliable, efficient, proactive support that reduces stress, protects your time,
-              and keeps the important things moving. I add value through excellent communication,
-              confidentiality, and thoughtful attention to detail.
-            </p>
-          </div>
+          <figure class="card">
+            <img src="assets/expertise-2.jpg" alt="Social Media Assistance" />
+            <figcaption>Social Media Assistance</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="assets/expertise-3.jpg" alt="Customer Support" />
+            <figcaption>Customer Support</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="assets/expertise-1.jpg" alt="Project Management" />
+            <figcaption>Project Management</figcaption>
+          </figure>
         </div>
       </section>
 
-      <!-- 5) PROJECTS -->
-      <section class="card projects" id="projects">
-        <div class="projects-grid">
-          <div class="projects-left">
-            <h3 class="display-big">The<br/>Projects</h3>
-            <p class="muted">
-              A selection of services and work samples — designed to show how I support,
-              streamline, and elevate daily operations.
-            </p>
-            <div class="thin-rule"></div>
-          </div>
+      <!-- CERTIFICATIONS -->
+      <section id="certs" class="panel certs">
+        <div class="certs__left">
+          <h2 class="h2">My Certifications</h2>
+          <div class="rule"></div>
+          <p class="muted">
+            Certifications and trainings that strengthen my support skills, communication, and delivery standards.
+          </p>
+        </div>
 
-          <div class="projects-right">
-            <div class="grid4">
-              <a class="proj" href="#" aria-label="Project: Email Management">
-                <img src="images/project1.jpg" alt="Email management" />
-                <div class="proj-label">Email Management</div>
-              </a>
-
-              <a class="proj" href="#" aria-label="Project: Travel Management">
-                <img src="images/project2.jpg" alt="Travel management" />
-                <div class="proj-label">Travel Management</div>
-              </a>
-
-              <a class="proj" href="#" aria-label="Project: Research and Data Entry">
-                <img src="images/project3.jpg" alt="Research and data entry" />
-                <div class="proj-label">Research &amp; Data Entry</div>
-              </a>
-
-              <a class="proj" href="#" aria-label="Project: File Organization">
-                <img src="images/project4.jpg" alt="File organization" />
-                <div class="proj-label">File Organization</div>
-              </a>
-            </div>
-          </div>
+        <div class="certs__right">
+          <img src="assets/cert-1.jpg" alt="Certification 1" />
+          <img src="assets/cert-2.jpg" alt="Certification 2" />
+          <img src="assets/cert-3.jpg" alt="Certification 3" />
         </div>
       </section>
 
-      <!-- 6) CERTIFICATIONS -->
-      <section class="card certs" id="certs">
-        <div class="certs-grid">
-          <div class="certs-left">
-            <h3 class="display-big">My<br/>Certifications</h3>
-            <p class="muted">
-              Proof of training and continuous growth — built to deliver high-quality work with confidence.
-            </p>
-          </div>
+      <!-- WHY CHOOSE -->
+      <section class="panel why">
+        <div class="why__left">
+          <h2 class="h2">Why Choose Me:</h2>
+          <ul>
+            <li>I pay attention to every detail</li>
+            <li>I handle tasks proactively</li>
+            <li>I’m versatile and reliable</li>
+            <li>I make collaboration easy and friendly</li>
+            <li>I communicate clearly and professionally</li>
+          </ul>
+        </div>
 
-          <div class="certs-right">
-            <div class="cert-stack">
-              <img src="images/cert1.jpg" alt="Certification 1" />
-              <img src="images/cert2.jpg" alt="Certification 2" />
-              <img src="images/cert3.jpg" alt="Certification 3" />
-            </div>
-          </div>
+        <div class="why__right">
+          <div class="rule"></div>
+          <p class="muted">A calm, consistent partner for busy schedules and high standards.</p>
         </div>
       </section>
 
-      <!-- 7) WHY CHOOSE ME -->
-      <section class="card why" id="why">
-        <div class="why-grid">
-          <div class="why-left">
-            <h3 class="display-big">Why Choose Me:</h3>
-            <ul class="bullet">
-              <li>I pay attention to every detail</li>
-              <li>I work proactively — not reactively</li>
-              <li>I’m versatile and dependable</li>
-              <li>I make collaboration smooth & friendly</li>
-              <li>I communicate clearly and professionally</li>
-            </ul>
-          </div>
+      <!-- CONTACT -->
+      <section id="contact" class="panel contact">
+        <div class="contact__left">
+          <h2 class="h2">Let’s stay<br>in touch</h2>
+          <div class="rule"></div>
 
-          <div class="why-right">
-            <img class="img-soft" src="images/hero.jpg" alt="Clean lifestyle photo" />
-            <div class="thin-rule"></div>
-            <div class="site-mark">boujee-on-a-budget</div>
+          <div class="contact__info">
+            <div><span class="k">E-mail:</span> <a href="mailto:marialovebruce024@gmail.com">marialovebruce024@gmail.com</a></div>
+            <div><span class="k">Phone:</span> <a href="tel:+233503306173">+233 50 330 6173</a></div>
+            <div><span class="k">LinkedIn:</span> Love Morton-Bruce</div>
           </div>
         </div>
-      </section>
 
-      <!-- 8) CONTACT -->
-      <section class="card contact" id="contact">
-        <div class="contact-grid">
-          <div class="contact-left">
-            <h3 class="display">
-              <span class="display-big">Let’s stay</span>
-              <span class="display-big">in touch</span>
-            </h3>
-
-            <div class="contact-list">
-              <div class="row"><span class="k">E-mail:</span> <span class="v">hello@yourmail.com</span></div>
-              <div class="row"><span class="k">Phone:</span> <span class="v">+233 XX XXX XXXX</span></div>
-              <div class="row"><span class="k">LinkedIn:</span> <span class="v">Your LinkedIn Name</span></div>
-            </div>
-
-            <a class="btn btn-primary" href="#top">Back to Top</a>
-          </div>
-
-          <div class="contact-right">
-            <img class="phone" src="images/phone-mock.png" alt="Phone mockup" />
+        <div class="contact__right">
+          <div class="contact__card">
+            <h3 class="h3">Quick message</h3>
+            <p class="muted">Reply usually within 24 hours.</p>
+            <a class="button" href="mailto:marialovebruce024@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Love%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0AName%3A%0ACompany%3A%0AWhat%20I%20need%20help%20with%3A%0A%0AThank%20you!">
+              Email me
+            </a>
           </div>
         </div>
       </section>
 
       <footer class="footer">
-        <div>© <span id="year"></span> Boujee on a Budget</div>
+        <span>© <span id="year"></span> Boujee on a Budget</span>
       </footer>
 
     </div>
